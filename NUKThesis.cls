@@ -6,11 +6,15 @@
 % For Chinese
 \usepackage{xeCJK}
 
+% 教育部標準楷書
+% Windows 上面要換成標楷體
+\setCJKmainfont{TW-MOE-Std-Kai}
+
 % For graphics
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 
-\usepackage[a4paper]{geometry} % showframe is just for the example
+\usepackage[a4paper]{geometry}
 
 % For generate title
 %\usepackage{titling}
@@ -31,7 +35,7 @@
   \includegraphics[width=3cm, height=3cm]{nuk_logo}\\
   \vspace{0.5cm}
   \begin{LARGE}
-    \fontsize{20}{30} \selectfont 國立高雄大學資訊工程學系\\
+    國立高雄大學資訊工程學系\\
     \vspace{0.5em}
     碩士論文
   \end{LARGE}

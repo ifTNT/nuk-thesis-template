@@ -22,25 +22,21 @@
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 
+% For layout
 \usepackage[a4paper]{geometry}
 
-%\usepackage{draftwatermark}
+% For watermark
 \usepackage{lineno,xcolor}
 \usepackage[printwatermark]{xwatermark}
 
 \if@draftmark
+  % Show the DRAFT in background
   \newwatermark[allpages,color=red!50,angle=45,fontsize=5cm,xpos=-3.5cm,ypos=3.5cm]{DRAFT}
-  %\SetWatermarkAngle{45} 
-  %\SetWatermarkLightness{.8} 
-  %\SetWatermarkFontSize{5cm} 
-  %\SetWatermarkText{DRAFT}
 \else
+  % Show the NUK logo as watermark
   \newwatermark[allpages,xpos=0,ypos=0]{
     \includegraphics[width=7cm, height=7cm]{nuk_logo_bg}
   }
-  %\SetWatermarkAngle{0} 
-  %\SetWatermarkLightness{.9} 
-  %\SetWatermarkText{\includegraphics[width=7cm, height=7cm]{nuk_logo_bg}}
 \fi
 
 % Define Variables
@@ -50,12 +46,13 @@
 \def\professor#1{\def\@professor{#1}}
 \def\time#1{\def\@time{#1}}
 
+% Line-height=2
 \linespread{2}
 
 \newcommand{\coverpage}{
   \begin{titlepage}
   \newgeometry{margin=2.54cm}
-  \xwmwatermarkoff
+  \xwmwatermarkoff % No watermark in this page
   \fontsize{20pt}{20pt}\selectfont
   \centering
   \includegraphics[width=3cm, height=3cm]{nuk_logo}\\

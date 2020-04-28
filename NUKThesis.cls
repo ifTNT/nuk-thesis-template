@@ -31,14 +31,13 @@
 
 % For TOC, LOF and LOT
 \usepackage{tocloft}
+% Use dot to fill space between section name and page number
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\contentsname}{目錄}
-\renewcommand{\listfigurename}{圖目錄}
-\renewcommand{\listtablename }{表目錄}
 
 % For indent
 \usepackage{indentfirst}
 
+% Show watermarker
 \if@draftmark
   % Show the DRAFT in background
   \newwatermark[allpages,color=red!50,angle=45,fontsize=5cm,xpos=-3.5cm,ypos=3.5cm]{DRAFT}
@@ -55,6 +54,13 @@
 \def\author#1{\def\@author{#1}}
 \def\professor#1{\def\@professor{#1}}
 \def\time#1{\def\@time{#1}}
+
+% Translate to Chinese
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\listfigurename}{圖目錄}
+\renewcommand{\listtablename }{表目錄}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
 
 % Line-height=2
 \linespread{2}

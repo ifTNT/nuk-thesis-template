@@ -3,6 +3,9 @@
 % For Lorem lipsum
 \usepackage{lipsum}
 
+% For equation
+\usepackage{mathtools}
+
 \title{中文標題}
 \etitle{English title}
 \author{學生}
@@ -30,5 +33,50 @@
   % =====================================
   \section{介紹}
 
-  \lipsum[1-10]
+  \lipsum[1-4]
+  
+  \begin{equation}
+    X(\omega) = 
+      \begin{dcases*}
+       1 & $\omega\in A$\\
+       0 & $\omega \in A^c$
+      \end{dcases*}
+  \end{equation}
+
+  \section{各種圖和表}
+
+  \lipsum[5]
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=8cm]{figure}
+    \caption{當你 compile 一次就過}
+  \end{figure}
+
+  \lipsum[6]
+  
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=8cm]{figure2}
+    \caption{嚶嚶嚶嚶嚶}
+  \end{figure}
+  
+  \lipsum[7-8]
+  
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|} 
+      \hline
+      cell1 dummy text dummy text dummy text& cell2 & cell3 \\ 
+      \hline
+      \hline
+      cell1 dummy text dummy text dummy text & cell5 & cell6 \\ 
+      \hline
+      cell7 & cell8 & cell9 \\ 
+      \hline
+    \end{tabular}
+    \caption{就是一個表格}
+  \end{table}
+  
+  \lipsum[9-10]
+
 \end{document}

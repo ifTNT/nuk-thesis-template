@@ -2,6 +2,7 @@
 
 % For Lorem lipsum
 \usepackage{lipsum}
+\usepackage{zhlipsum}
 
 % For equation
 \usepackage{mathtools}
@@ -24,7 +25,7 @@
 
   {\noindent \Large 致謝}
 
-  \lipsum[4-5]
+  \zhlipsum[4-5][name=nanshanjing]
   \clearpage
   \pagenumbering{arabic} % Reset the page number counter
   
@@ -33,7 +34,7 @@
   % =====================================
   \section{介紹}
 
-  \lipsum[1-4]
+  \zhlipsum[1-4][name=nanshanjing]
   
   \begin{equation}
     X(\omega) = 
@@ -45,14 +46,14 @@
 
   \section{各種圖和表}
 
-  \lipsum[5]
+  \zhlipsum[5][name=nanshanjing]
   \begin{figure}[h]
     \centering
     \includegraphics[width=8cm]{figure}
     \caption{當你 compile 一次就過}
   \end{figure}
 
-  \lipsum[6]
+  \zhlipsum[6-8][name=nanshanjing]
   
   \begin{figure}[h]
     \centering
@@ -60,7 +61,7 @@
     \caption{嚶嚶嚶嚶嚶}
   \end{figure}
   
-  \lipsum[7-8]
+  \zhlipsum[8-10][name=nanshanjing]
   
   \begin{table}[h]
     \centering
@@ -77,6 +78,6 @@
     \caption{就是一個表格}
   \end{table}
   
-  \lipsum[9-10]
+  \zhlipsum[9-10][name=nanshanjing]
 
 \end{document}

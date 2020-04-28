@@ -29,6 +29,16 @@
 \usepackage{lineno,xcolor}
 \usepackage[printwatermark]{xwatermark}
 
+% For TOC, LOF and LOT
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\listfigurename}{圖目錄}
+\renewcommand{\listtablename }{表目錄}
+
+% For indent
+\usepackage{indentfirst}
+
 \if@draftmark
   % Show the DRAFT in background
   \newwatermark[allpages,color=red!50,angle=45,fontsize=5cm,xpos=-3.5cm,ypos=3.5cm]{DRAFT}
